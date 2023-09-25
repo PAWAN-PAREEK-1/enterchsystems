@@ -6,8 +6,8 @@
 .mainhead {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 3.25rem;
-    background: #fff;
+    padding: 0.94rem 15rem;
+    background: #373B49;
     backdrop-filter: blur(12.5px);
     align-items: center;
 }
@@ -27,20 +27,34 @@
 }
 
 .NavbarList li a {
-    color: #7A7A7A;
-    font-family: Poppins;
-    font-size: 1.125rem;
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-transform: capitalize;
+    text-decoration: none;
 
 }
 
 .NavbarList li a:hover {
-    color: #FE0000;
+    color: var(--yellow, #F5C33D);
+    font-family: Outfit;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
 }
 .NavbarList li a.active{
-    color: #FE0000;
+    color: var(--yellow, #F5C33D);
+    font-family: Outfit;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
 
 }
 
@@ -61,7 +75,7 @@
     padding: 0.88rem 15rem;
     background-color: #272B39;
     flex-direction: row-reverse;
-    border-bottom: 1px solid #EFEFEF;
+
 }
 
 .head h1 {

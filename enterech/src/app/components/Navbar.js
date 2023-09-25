@@ -9,6 +9,7 @@ import face from "../img/face.svg";
 import insta from "../img/insta.svg";
 import twit from "../img/twit.svg";
 import tel from "../img/tel.svg";
+import logo from "../img/logo.svg";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,10 +27,10 @@ const Navbar = () => {
       <header>
         <div className={styles.head}>
           <div className={styles.heading}>
-            <span href=""><Image src={insta} alt="sa" /></span>
-            <span href=""><Image src={face} alt="" /></span>
-            <span href=""><Image src={twit} alt="" /></span>
-            <span href=""> <Image src={tel} alt="" /></span>
+            <Link href=""><Image src={insta} alt="sa" /></Link>
+            <Link href=""><Image src={face} alt="" /></Link>
+            <Link href=""><Image src={twit} alt="" /></Link>
+            <Link href=""> <Image src={tel} alt="" /></Link>
           </div>
 
           <div className={styles.headmail}>
@@ -49,7 +50,7 @@ const Navbar = () => {
         </div>
 
         <div className={styles.mainhead}>
-          <Image src={""} alt="" id="logo" />
+          <Image src={logo} alt="" id="logo" />
 
           <div>
             <nav>
@@ -65,7 +66,33 @@ const Navbar = () => {
                     <span className={menuOpen ? "active" : ""}>Home</span>
                   </Link>
                 </li>
-                {/* Add other navigation links here */}
+                <li>
+                  <Link href="/" onClick={closeMenu}>
+                    <span className={menuOpen ? "active" : ""}>About Us</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/" onClick={closeMenu}>
+                    <span className={menuOpen ? "active" : ""}>Projects</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/" onClick={closeMenu}>
+                    <span className={menuOpen ? "active" : ""}>Products</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/" onClick={closeMenu}>
+                    <span className={menuOpen ? "active" : ""}>Blog</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/" onClick={closeMenu}>
+                    <span className={menuOpen ? "active" : ""}>Contact Us</span>
+                  </Link>
+                </li>
+
+
               </ul>
             </nav>
             {menuOpen && (
@@ -74,12 +101,36 @@ const Navbar = () => {
                   <Image src="../public/assets/Image/close.svg" alt="" />
                 </div>
                 <ul>
-                  <li>
-                    <Link href="/" onClick={closeMenu}>
-                      <span className={menuOpen ? "active" : ""}>Home</span>
-                    </Link>
-                  </li>
-                  {/* Add other mobile navigation links here */}
+                <li>
+                  <Link href="/" onClick={closeMenu}>
+                    <span className={menuOpen ? "active" : ""}>Home</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/" onClick={closeMenu}>
+                    <span className={menuOpen ? "active" : ""}>About Us</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/" onClick={closeMenu}>
+                    <span className={menuOpen ? "active" : ""}>Projects</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/" onClick={closeMenu}>
+                    <span className={menuOpen ? "active" : ""}>Products</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/" onClick={closeMenu}>
+                    <span className={menuOpen ? "active" : ""}>Blog</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/" onClick={closeMenu}>
+                    <span className={menuOpen ? "active" : ""}>Contact Us</span>
+                  </Link>
+                </li>
                 </ul>
               </div>
             )}
