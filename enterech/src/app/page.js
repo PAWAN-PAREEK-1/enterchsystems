@@ -5,6 +5,7 @@ import Link from "next/link";
 import Header from "@/app/components/Navbar";
 import About from "@/app/components/About";
 import Product from "@/app/components/Product";
+import Testimonial from "@/app/components/Testimonial";
 import styles from "@/app/style/Index.module.css";
 import "../app/globals.css";
 import sline from "./img/sline.svg";
@@ -78,6 +79,7 @@ export default function Home() {
 
       <About/>
       <Product/>
+      <Testimonial/>
     </main>
   );
 }
