@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "@/app/components/Navbar";
+import About from "@/app/components/About";
 import styles from "@/app/style/Index.module.css";
 import "../app/globals.css";
 import sline from "./img/sline.svg";
@@ -65,7 +66,7 @@ export default function Home() {
 
         <div className={styles.heroRight}>
           <div className={styles.heroImg}>
-            <Image src={heroImages[currentImageIndex]} />
+            <Image src={heroImages[currentImageIndex]} id={styles.heroImg} />
             <div className={styles.prevImg}>
               <Image src={prev} onClick={handlePrevClick} />
               <Image src={next} onClick={handleNextClick} />
@@ -73,6 +74,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <About/>
     </main>
   );
 }

@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 7.5rem;
 }
 .heroLeft{
     display: flex;
@@ -56,6 +57,10 @@ line-height: normal;
     position: relative;
 
 }
+/* #heroImg{
+    width: 18.0625rem;
+height: 39.625rem;
+} */
 .prevImg{
     display: flex;
     align-items: center;
@@ -63,4 +68,7 @@ line-height: normal;
     position: absolute;
     bottom: 1.25rem;
     right: 1.25rem;
+}
+.prevImg img{
+    cursor: pointer;
 }

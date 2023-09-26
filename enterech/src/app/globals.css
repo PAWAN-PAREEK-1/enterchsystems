@@ -35,3 +35,7 @@ background: var(--blue, #272B39);
 .btn-hero{
   margin-top: 1.56rem;
 }
+
+.index{
+ padding: 0 15rem 7.5rem;
+}
