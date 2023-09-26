@@ -10,6 +10,7 @@ import insta from "../img/insta.svg";
 import twit from "../img/twit.svg";
 import tel from "../img/tel.svg";
 import logo from "../img/logo.svg";
+import rightArrow from "../img/rightarrow.svg";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -136,9 +137,9 @@ const Navbar = () => {
             )}
           </div>
 
-          <span href="">
-            <div className="btn">GET Estimate</div>
-          </span>
+          <Link href="" id={styles.a}>
+            <div className={styles.btn}>Get Estimate Now <Image src={rightArrow}/></div>
+          </Link>
         </div>
       </header>
     </div>

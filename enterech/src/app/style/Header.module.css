@@ -118,14 +118,22 @@ line-height: normal;
     gap: 0.94rem;
 }
 .btn{
-    background-color: #FE0000;
-    padding: 0.62rem 1.25rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.62rem;
     color: #FFF;
-font-family: Poppins;
-font-size: 1.125rem;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    font-family: Outfit;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    padding: .75rem 1.25rem;
+    border: 1px solid var(--yellow, #F5C33D);
+background: var(--blue, #272B39);
+}
+ #a{
+    text-decoration: none;
 }
 
 
