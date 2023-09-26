@@ -17,9 +17,9 @@ const testimonialsData = [
   {
     imageSrc: testi,
     iconSrc: testiicon,
-    title: "Title 2",
-    text: "Testimonial text 2...",
-    author: "Author 2",
+    title: "profession,  ",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis aliquet odio, sit amet rutrum magna. Duis cursus leo in condimentum cursus. Etiam vitae interdum ex, suscipit aliquam erat. Donec lacinia imperdiet mi, ut mattis sem pulvinar a. Praesent placerat, velit at luctus pulvinar, dolor est faucibus orci, vel posuere tellus enim non elit",
+    author: "Emery Culhane",
   },
 
 ];
@@ -34,7 +34,25 @@ const Testimonial = () => {
   return (
     <section className={styles.indexTesti}>
       <div className={styles.up}>
-        {/* Your statistics section */}
+
+        <div className={styles.indexInfo}>
+        <div className={styles.info}>
+        <span>Our Statistics</span>
+          <h1>Some Important Facts</h1>
+        </div>
+        <div className={`${styles.info} ${styles.info2}`}>
+          <h1>5000+</h1>
+         <h4>Residential Projects</h4>
+        </div>
+        <div className={`${styles.info} ${styles.info2}`}>
+          <h1>1000+</h1>
+          <h4>Commercial Projects</h4>
+        </div>
+        <div className={`${styles.info} ${styles.info2}`}>
+          <h1>15000+</h1>
+          <h4>Industrial Projects</h4>
+        </div>
+        </div>
       </div>
       <div className={styles.down} style={{ textAlign: 'right' }}>
         <Image src={testibg} />
