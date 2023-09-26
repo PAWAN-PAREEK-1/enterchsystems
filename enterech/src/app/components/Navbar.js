@@ -11,6 +11,7 @@ import twit from "../img/twit.svg";
 import tel from "../img/tel.svg";
 import logo from "../img/logo.svg";
 import rightArrow from "../img/rightarrow.svg";
+ 
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -68,7 +69,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" onClick={closeMenu}>
+                  <Link href="/About" onClick={closeMenu}>
                     <span className={menuOpen ? "active" : ""}>About Us</span>
                   </Link>
                 </li>
@@ -137,8 +138,8 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link href="" id={styles.a}>
-            <div className={styles.btn}>Get Estimate Now <Image src={rightArrow}/></div>
+          <Link href="" id="a">
+            <div className="btn">Get Estimate Now <Image src={rightArrow}/></div>
           </Link>
         </div>
       </header>

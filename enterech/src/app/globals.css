@@ -8,3 +8,30 @@
   --Poppins: 'Poppins', sans-serif;
   --Playfair: 'Playfair Display', serif;
 }
+
+/* .index{
+  padding: ;
+} */
+
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.62rem;
+  color: #FFF;
+  font-family: Outfit;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  padding: .75rem 1.25rem;
+  border: 1px solid var(--yellow, #F5C33D);
+background: var(--blue, #272B39);
+}
+#a{
+  text-decoration: none;
+}
+.btn-hero{
+  margin-top: 1.56rem;
+}
