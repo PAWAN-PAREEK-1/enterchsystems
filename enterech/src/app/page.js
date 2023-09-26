@@ -1,15 +1,40 @@
+"use client"
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "@/app/components/Navbar";
 import styles from "@/app/style/Index.module.css";
 import "../app/globals.css";
-import heroimg from "./img/heroel.svg";
 import sline from "./img/sline.svg";
 import rightArrow from "./img/rightarrow.svg";
 import prev from "./img/prev.svg";
 import next from "./img/next.svg";
+import herobg from "./img/heroel.svg";
+import herobg3 from "./img/heroel3.svg";
+
+
+
+
+const heroImages = [
+  herobg,
+  herobg3
+
+
+];
 
 export default function Home() {
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);const handlePrevClick = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? heroImages.length - 1 : prevIndex - 1
+    );
+  };
+  const handleNextClick = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === heroImages.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
   return (
     <main>
       <Header />
@@ -40,10 +65,10 @@ export default function Home() {
 
         <div className={styles.heroRight}>
           <div className={styles.heroImg}>
-            <Image src={heroimg} />
+            <Image src={heroImages[currentImageIndex]} />
             <div className={styles.prevImg}>
-              <Image src={prev} />
-              <Image src={next} />
+              <Image src={prev} onClick={handlePrevClick} />
+              <Image src={next} onClick={handleNextClick} />
             </div>
           </div>
         </div>
