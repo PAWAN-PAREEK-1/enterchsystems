@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/app/components/Navbar";
 import About from "@/app/components/About";
+import Product from "@/app/components/Product";
 import styles from "@/app/style/Index.module.css";
 import "../app/globals.css";
 import sline from "./img/sline.svg";
@@ -76,6 +77,7 @@ export default function Home() {
       </div>
 
       <About/>
+      <Product/>
     </main>
   );
 }

@@ -38,4 +38,21 @@ background: var(--blue, #272B39);
 
 .index{
  padding: 0 15rem 7.5rem;
+
+}
+.btn-p-more{
+  padding-inline: 3.63rem;
+  background-color: #FFF;
+  color: var(--blue, #272B39);
+  border: 1px solid var(--blue, #272B39);
+}
+
+.btn-p-more:hover{
+  border-bottom: 1px solid var(--yellow, #F5C33D);
+background: var(--blue, #272B39);
+color: white;
+}
+.btn-p{
+  padding-inline: 1.25rem 1.44rem;
+  margin-top: 3.13rem;
 }
