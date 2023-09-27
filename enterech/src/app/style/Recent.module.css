@@ -26,3 +26,8 @@ text-transform: capitalize;
 .up span{
     color: var(--yellow, #F5C33D);
 }
+.imageContainer{
+    display: flex;
+    gap: 0.6rem;
+    overflow: auto;
+}
