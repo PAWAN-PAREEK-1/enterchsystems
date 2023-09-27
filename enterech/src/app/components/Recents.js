@@ -1,5 +1,4 @@
-"use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../style/Recent.module.css";
@@ -11,10 +10,35 @@ import rightArrow from "../img/rightarrow.svg";
 
 const Recents = () => {
   const [images, setImages] = useState([
-    // Add your image URLs here dynamically
-  r1, r2, r3,  r1, r2, r3,  r1, r2, r3,  r1, r2, r3,
-    // Add more images as needed
-  ]);
+
+    r1, r2, r3, r1, r2, r3, r1, r2, r3, r1, r2, r3, r1, r2, r3,
+
+
+
+]);
+  const [scrollIndex, setScrollIndex] = useState(0);
+
+  const imageContainerRef = useRef(null);
+  const startXRef = useRef(null);
+  const scrollLeftRef = useRef(null);
+
+  const handleMouseDown = (e, index) => {
+    startXRef.current = e.pageX - imageContainerRef.current.offsetLeft;
+    scrollLeftRef.current = imageContainerRef.current.scrollLeft;
+    setScrollIndex(index);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!startXRef.current) return;
+    const x = e.pageX - imageContainerRef.current.offsetLeft;
+    const walk = x - startXRef.current;
+    imageContainerRef.current.scrollLeft = scrollLeftRef.current - walk;
+  };
+
+  const handleMouseUp = () => {
+    startXRef.current = null;
+    scrollLeftRef.current = null;
+  };
 
   return (
     <section>
@@ -31,19 +55,28 @@ const Recents = () => {
           </Link>
         </div>
 
-        <div className={styles.down}>
-          <div className={styles.imageContainer}>
-            {images.map((image, index) => (
-              <div key={index} className={styles.imageWrapper}>
-                <Image
-                  src={image}
-                  alt={`Image ${index + 1}`}
-                //   width={200} // Set the desired width
-                //   height={150} // Set the desired height
-                />
-              </div>
-            ))}
-          </div>
+        <div
+          className={styles.down}
+          ref={imageContainerRef}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+        >
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={`${styles.imageWrapper} ${
+                index === scrollIndex ? styles.active : ""
+              }`}
+            >
+              <Image
+                src={image}
+                alt={`Image ${index + 1}`}
+                // width={200} // Set the desired width
+                // height={150} // Set the desired height
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>
