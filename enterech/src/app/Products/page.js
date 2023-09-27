@@ -27,7 +27,7 @@ const aboutBoxesData = [
     imageSrc: blub1,
     title: "Control Panel",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt.",
-    link: "/link1",
+    link: "/Product",
   },
   {
     imageSrc: blub2,
