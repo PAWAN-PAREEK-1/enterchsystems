@@ -1,3 +1,5 @@
+
+"use client"
 import React, { useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -7,6 +9,7 @@ import r1 from "../img/r1.svg";
 import r2 from "../img/r2.svg";
 import r3 from "../img/r3.svg";
 import rightArrow from "../img/rightarrow.svg";
+import recentbg from "../img/recentbg.svg";
 
 const Recents = () => {
   const [images, setImages] = useState([
@@ -62,6 +65,8 @@ const Recents = () => {
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
         >
+            <Image src={recentbg} className={styles.bg}/>
+
           {images.map((image, index) => (
             <div
               key={index}
@@ -72,8 +77,8 @@ const Recents = () => {
               <Image
                 src={image}
                 alt={`Image ${index + 1}`}
-                // width={200} // Set the desired width
-                // height={150} // Set the desired height
+                // width={278} // Set the desired width
+                // height={371} // Set the desired height
               />
             </div>
           ))}

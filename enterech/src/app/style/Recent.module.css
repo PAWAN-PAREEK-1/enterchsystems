@@ -3,7 +3,7 @@
     background: linear-gradient(rgb(39, 43, 57), rgb(39, 43, 57)), url(../img/recenbg.png);
     background-size: cover;
     background-position: center; /* Center the background image */
-
+    position: relative;
 
 }
 .up{
@@ -30,6 +30,7 @@ text-transform: capitalize;
     display: flex;
     gap: 0.6rem;
     overflow-x: auto;
+
   }
 
   /* Hide the scrollbar and customize its appearance for Webkit-based browsers */
@@ -39,4 +40,10 @@ text-transform: capitalize;
 
   .down::-webkit-scrollbar-thumb {
     background-color: transparent; /* Color of the scrollbar thumb */
+  }
+  .bg{
+    position: absolute;
+    left: 0;
+   bottom: 2px;
+
   }
