@@ -6,6 +6,8 @@ import Header from "@/app/components/Navbar";
 import "../globals.css";
 import styles from "@/app/style/AboutPage.module.css";
 import About from "@/app/components/About";
+import Recents from "@/app/components/Recents";
+import Footer from "@/app/components/Footer2";
 import a1 from "../img/a1.svg";
 import a2 from "../img/a2.svg";
 import s1 from "../img/s1.svg";
@@ -86,8 +88,11 @@ const page = () => {
                   <Image src={s4}/>
         </div>
 
-      </section>
 
+
+
+      </section>
+      <Footer/>
 
     </div>
   );
