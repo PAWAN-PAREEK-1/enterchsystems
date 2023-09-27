@@ -59,3 +59,21 @@ color: white;
 /* .index-testi{
   background: var(--blue, #272B39);
 } */
+
+
+.hero-all{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url('/images/heroall.png'); */
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/heroall.png') center/cover no-repeat;
+  color: var(--yellow, #F5C33D);
+font-family: Outfit;
+font-size: 4.375rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+padding-block: 8.62rem 9.12rem;
+margin-bottom: 7.5rem;
+}
