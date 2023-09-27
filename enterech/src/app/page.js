@@ -8,6 +8,7 @@ import Product from "@/app/components/Product";
 import Testimonial from "@/app/components/Testimonial";
 import Recents from "@/app/components/Recents";
 import Blog from "@/app/components/Blog";
+import Footer from "@/app/components/Footer";
 import styles from "@/app/style/Index.module.css";
 import "../app/globals.css";
 import sline from "./img/sline.svg";
@@ -84,6 +85,7 @@ export default function Home() {
       <Testimonial/>
       <Recents/>
       <Blog/>
+      <Footer/>
     </main>
   );
 }
