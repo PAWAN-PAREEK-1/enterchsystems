@@ -1,6 +1,7 @@
 .indexTesti{
     background: var(--blue, #272B39);
     position: relative;
+    margin-bottom: 7.5rem;
 }
 .up{
     padding: 2.5rem 15rem 0rem;
@@ -120,5 +121,5 @@ border: 1px solid #272B39;
   }
 
   .activeCircle {
-    background-color: #F5C33D; 
+    background-color: #F5C33D;
   }
