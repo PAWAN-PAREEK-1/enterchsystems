@@ -6,7 +6,6 @@ import Header from "@/app/components/Navbar";
 import "../globals.css";
 import styles from "@/app/style/AboutPage.module.css";
 import About from "@/app/components/About";
-import Recents from "@/app/components/Recents";
 import Footer from "@/app/components/Footer2";
 import a1 from "../img/a1.svg";
 import a2 from "../img/a2.svg";
@@ -14,14 +13,16 @@ import s1 from "../img/s1.svg";
 import s2 from "../img/s2.svg";
 import s3 from "../img/s3.svg";
 import s4 from "../img/s4.svg";
+import hori from "../img/hori.svg";
 
 const page = () => {
   return (
     <div>
       <Header />
 
-      <div className="hero-all">
+     <div className="hero-all">
         <h1>About Us</h1>
+            <Image src={hori}/>
       </div>
 
       <About />

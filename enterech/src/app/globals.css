@@ -76,4 +76,5 @@ line-height: normal;
 text-transform: capitalize;
 padding-block: 8.62rem 9.12rem;
 margin-bottom: 7.5rem;
+flex-direction: column;
 }
