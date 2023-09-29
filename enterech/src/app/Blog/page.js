@@ -17,7 +17,7 @@ const blogData = [
     date: "23 Nov, 2016",
     title: "Outdoor and Motion Lighting",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt...",
-    link: "Link to Blog 1",
+    link: "/Blogs",
     image: b1,
   },
   {
@@ -98,16 +98,15 @@ const blogData = [
     image: b2,
   },
 
-  // Add more blog data objects as needed
+
 ];
 
 
 const Page = () => {
 
-    const [visibleCount, setVisibleCount] = useState(9); // Initially, show 9 boxes
+    const [visibleCount, setVisibleCount] = useState(9);
 
     const handleLoadMore = () => {
-      // Increase the visible count by 3 when "Load More" is clicked
       setVisibleCount((prevCount) => prevCount + 3);};
       const showLoadMoreButton = visibleCount < blogData.length;
 
@@ -150,7 +149,7 @@ const Page = () => {
                     </div>
                   ))}
                 </div>
-                {showLoadMoreButton && ( // Only show "Load More" button if there is more data to load
+                {showLoadMoreButton && (
                   <div>
                     <button className="btn" id={styles.btnAbout} onClick={handleLoadMore}>
                       Load More
