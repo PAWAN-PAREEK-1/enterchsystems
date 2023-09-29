@@ -21,7 +21,7 @@ const projectData = [
     link: "Link to Project 1",
   },
   {
-    imageUrl: p3, // Replace with actual image URL
+    imageUrl: p3,
     link: "Link to Project 2",
   },
   {
@@ -29,7 +29,7 @@ const projectData = [
     link: "Link to Project 1",
   },
   {
-    imageUrl: p5, // Replace with actual image URL
+    imageUrl: p5,
     link: "Link to Project 2",
   },
   {
@@ -37,10 +37,10 @@ const projectData = [
     link: "Link to Project 1",
   },
   {
-    imageUrl: p3, // Replace with actual image URL
+    imageUrl: p3,
     link: "Link to Project 2",
   },
-  // Add more project data objects as needed
+
 ];
 
 const Page = () => {

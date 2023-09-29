@@ -1,7 +1,7 @@
 #heroAll{
     margin-bottom: 0;
 }
-.index{
+.index {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +9,14 @@
     background: var(--blue, #272B39);
     padding: 7.5rem 15rem;
     margin-bottom: 7.5rem;
-}
+    position: relative;
+    background-image: url(../img/build.svg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: left center;
+  }
+
+
 .index h1{
     color: #FFF;
 font-family: Lexend Deca;
@@ -25,23 +32,28 @@ text-transform: capitalize;
 .project{
     display: flex;
     align-items: center;
-    gap: 1.31rem;
+
     flex-wrap: wrap;
     margin-top: 3.13rem;
+   gap: 1.13rem;
 }
 .box{
     position: relative;
     cursor: pointer;
-   max-width: 31%;
+
 }
-/* .box img{
+.box img{
     width: 100%;
-} */
+    height: 100%;
+}
 .hover{
     display: none;
     position: absolute;
-    top: 3.2%;
-    left: 3.2%;
+    top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
 }
 .box:hover .hover{
     display: block;
@@ -49,3 +61,4 @@ text-transform: capitalize;
 #box2{
     width: 32%;
 }
+
