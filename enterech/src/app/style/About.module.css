@@ -82,3 +82,50 @@ gap: 0.63rem;
     min-height: 870px;
 }
 
+@media (max-width: 768px) {
+    .right{
+        padding: 0.94rem;
+        width: fit-content;
+        top: 25.13rem;
+        box-shadow: none;
+    }
+    .right h4{
+font-size: 0.9375rem;
+font-weight: 500;
+line-height: normal;
+    }
+    .right h1{
+font-size: 1.25rem;
+font-weight: 700;
+line-height: normal;
+    }
+    .right p{
+font-size: 0.875rem;
+font-weight: 400;
+line-height: normal;
+padding-block: 0.63rem;
+    }
+    .work h5{
+font-size: 0.875rem;
+font-weight: 500;
+line-height: normal;
+    }
+    #aboutbg2{
+        width: 100%;
+        top: -10rem;
+        left: 0;
+    }
+    #aboutbg{
+        width: 64%;
+        top: 8.4rem;
+        left: -1rem;
+    }
+    .left{
+        position: initial;
+    }
+    #btnAbout{
+        margin-top: 1rem;
+    }
+
+}
+

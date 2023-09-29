@@ -76,3 +76,44 @@ text-transform: capitalize;
     width: 22%;
 }
 
+
+@media (max-width: 768px){
+    .up h2{
+font-size: 1.5rem;
+font-weight: 700;
+line-height: normal;
+    }
+    .up p{
+text-align: center;
+font-size: 0.75rem;
+font-weight: 400;
+padding-inline: 0;
+    }
+    .aboutBox{
+        padding: 0.63rem;
+        min-width: 10rem;
+
+    }
+    .down{
+        overflow: auto;
+        justify-content: initial;
+        width: 100%;
+    }
+    .aboutBox img{
+        width: 3.8rem;
+        height: 100%;
+    }
+    .aboutBox h3{
+font-size: 1.0625rem;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+
+    }
+    .aboutBox p{
+font-size: 0.6875rem;
+font-weight: 400;
+text-transform: capitalize;
+    }
+}
+

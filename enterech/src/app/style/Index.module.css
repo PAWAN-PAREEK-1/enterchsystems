@@ -79,6 +79,7 @@ height: 39.625rem;
     .mainHero{
             padding: 1.6rem 0.94rem;
             flex-direction: column-reverse;
+            margin-bottom: 2.19rem;
     }
     .heroLeft{
         margin-top: 1.63rem;
@@ -97,6 +98,10 @@ text-transform: capitalize;
 font-size: 0.875rem;
 font-weight: 400;
 line-height: normal;
+    }
+    .heroImg img{
+        width: 100%;
+        height: 100%;
     }
 }
 
