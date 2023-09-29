@@ -55,55 +55,115 @@ const blogData = [
     link: "Link to Blog 2",
     image: b2,
   },
+  {
+    date: "23 Nov, 2016",
+    title: "Outdoor and Motion Lighting",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt...",
+    link: "Link to Blog 1",
+    image: b1,
+  },
+  {
+    date: "30 Dec, 2016",
+    title: "Outdoor and Motion Lighting",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt...",
+    link: "Link to Blog 2",
+    image: b2,
+  },
+  {
+    date: "23 Nov, 2016",
+    title: "Outdoor and Motion Lighting",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt...",
+    link: "Link to Blog 1",
+    image: b1,
+  },
+  {
+    date: "30 Dec, 2016",
+    title: "Outdoor and Motion Lighting",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt...",
+    link: "Link to Blog 2",
+    image: b2,
+  },
+  {
+    date: "23 Nov, 2016",
+    title: "Outdoor and Motion Lighting",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt...",
+    link: "Link to Blog 1",
+    image: b1,
+  },
+  {
+    date: "30 Dec, 2016",
+    title: "Outdoor and Motion Lighting",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt...",
+    link: "Link to Blog 2",
+    image: b2,
+  },
+
   // Add more blog data objects as needed
 ];
 
+
 const Page = () => {
-  return (
-    <div>
-      <Header />
 
-      <div className="hero-all">
-        <h1>Blog</h1>
-        <Image src={hori} />
-      </div>
+    const [visibleCount, setVisibleCount] = useState(9); // Initially, show 9 boxes
 
-      <section>
-        <div className="index">
-          <div className={`${styles.up} ${style.up} `}>
-            <div className={styles.upDetail}>
-              <h1>
-                Latest <span>News & Blog</span>{" "}
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt purus et dui
-                molestie pharetra sits finibus nu
-              </p>
-            </div>
+    const handleLoadMore = () => {
+      // Increase the visible count by 3 when "Load More" is clicked
+      setVisibleCount((prevCount) => prevCount + 3);};
+      const showLoadMoreButton = visibleCount < blogData.length;
+
+      return (
+        <div>
+          <Header />
+
+          <div className="hero-all">
+            <h1>Blog</h1>
+            <Image src={hori} />
           </div>
-          <div className={style.down}>
-            <div  className={style.Box}>
-              {blogData.map((blog, index) => (
-                <div key={index}>
-                  <Link href={blog.link}>
-                    <div className={`${styles.rightBox} ${style.rightbox}`}>
-                      <Image src={blog.image} />
-                      <div className={styles.boxDetail}>
-                        <h4>{blog.date}</h4>
-                        <h1>{blog.title}</h1>
-                        <p>{blog.content}</p>
-                      </div>
-                    </div>
-                  </Link>
+
+          <section>
+            <div className="index">
+              <div className={`${styles.up} ${style.up} `}>
+                <div className={styles.upDetail}>
+                  <h1>
+                    Latest <span>News & Blog</span>{" "}
+                  </h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt purus et dui
+                    molestie pharetra sits finibus nu
+                  </p>
                 </div>
-              ))}
+              </div>
+              <div className={style.down}>
+                <div className={style.Box}>
+                  {blogData.slice(0, visibleCount).map((blog, index) => (
+                    <div key={index}>
+                      <Link href={blog.link}>
+                        <div className={`${styles.rightBox} ${style.rightbox}`}>
+                          <Image src={blog.image} />
+                          <div className={styles.boxDetail}>
+                            <h4>{blog.date}</h4>
+                            <h1>{blog.title}</h1>
+                            <p>{blog.content}</p>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+                {showLoadMoreButton && ( // Only show "Load More" button if there is more data to load
+                  <div>
+                    <button className="btn" id={styles.btnAbout} onClick={handleLoadMore}>
+                      Load More
+                      <Image src={rightArrow} />
+                    </button>
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
+          </section>
+          <Footer />
         </div>
-      </section>
-      <Footer />
-    </div>
-  );
-};
+      );
+    };
 
-export default Page;
+    export default Page;
