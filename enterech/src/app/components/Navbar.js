@@ -89,7 +89,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" onClick={closeMenu}>
+                  <Link href="/Contact" onClick={closeMenu}>
                     <span className={menuOpen ? "active" : ""}>Contact Us</span>
                   </Link>
                 </li>
