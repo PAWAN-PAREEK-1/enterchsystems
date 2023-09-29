@@ -75,12 +75,12 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link href="/Products" onClick={closeMenu}>
-                    <span className={menuOpen ? "active" : ""}>Projects</span>
+                    <span className={menuOpen ? "active" : ""}>Products</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" onClick={closeMenu}>
-                    <span className={menuOpen ? "active" : ""}>Products</span>
+                  <Link href="/Project" onClick={closeMenu}>
+                    <span className={menuOpen ? "active" : ""}>Projects</span>
                   </Link>
                 </li>
                 <li>

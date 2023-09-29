@@ -1,0 +1,51 @@
+#heroAll{
+    margin-bottom: 0;
+}
+.index{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--blue, #272B39);
+    padding: 7.5rem 15rem;
+    margin-bottom: 7.5rem;
+}
+.index h1{
+    color: #FFF;
+font-family: Lexend Deca;
+font-size: 3rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+}
+.index span{
+    color: var(--yellow, #F5C33D);
+}
+.project{
+    display: flex;
+    align-items: center;
+    gap: 1.31rem;
+    flex-wrap: wrap;
+    margin-top: 3.13rem;
+}
+.box{
+    position: relative;
+    cursor: pointer;
+   max-width: 31%;
+}
+/* .box img{
+    width: 100%;
+} */
+.hover{
+    display: none;
+    position: absolute;
+    top: 3.2%;
+    left: 3.2%;
+}
+.box:hover .hover{
+    display: block;
+}
+#box2{
+    width: 32%;
+}
