@@ -1,7 +1,7 @@
 
 
 .up{
-    justify-content: center;
+    justify-content: center !important;
 }
 .up h1,.up p{
     text-align: center;
@@ -16,7 +16,7 @@
 }
 .rightbox{
     margin-bottom: 7.5rem;
-    width: 28.18rem;
+    width: 28.18rem !important;
     height: 100%;
 }
 .rightbox img{
@@ -29,4 +29,58 @@
     flex-direction: column;
     align-items: center;
 }
+.indexMain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.87rem;
+    position: relative;
+}
 
+.left,.Iright{
+    width: 50%;
+
+}
+.left img{
+    width: 100%;
+}
+.Iright p{
+    color: #7F7F7F;
+font-family: Lexend Deca;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.detailBox {
+    position: absolute;
+    padding: 1.25rem;
+    top: 4rem;
+    right: 4rem;
+    background: #FFF;
+    box-shadow: -2px 1px 17px 0px rgba(0, 0, 0, 0.06);
+}
+.detailBox h3{
+    color: var(--yellow, #F5C33D);
+font-family: Lexend Deca;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-bottom: 0.31rem;
+}
+.detailBox h1{
+    color: var(--blue, #272B39);
+font-family: Lexend Deca;
+font-size: 3rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.blog{
+    position: relative;
+    height: 100%;
+}
+.Iright{
+    margin-top: 5.19rem;
+}

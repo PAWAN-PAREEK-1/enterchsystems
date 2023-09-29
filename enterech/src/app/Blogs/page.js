@@ -9,6 +9,7 @@ import "../globals.css";
 import rightArrow from "../img/rightarrow.svg";
 import b1 from "../img/b1.svg";
 import b2 from "../img/b2.svg";
+import b3 from "../img/b3.svg";
 
 import Footer from "@/app/components/Footer";
 import hori from "../img/hori.svg";
@@ -120,7 +121,25 @@ const blogData = [
 
             <section>
                 <div className="index">
+                    <div className={style.indexMain}>
+                        <div className={style.left}>
+                                    <Image src={b3} />
+                                    <div className={style.detailBox}>
 
+<h3>23 Nov,2016</h3>
+<h1>Outdoor and motion Lighting</h1>
+
+</div>
+                        </div>
+                        <div className={style.Iright}>
+                            <div className={style.blog}>
+
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed erat vel tortor aliquam ornare. Vestibulum blandit lorem non sodales molestie. Phasellus nec finibus nulla. Ut at euismod arcu. Duis efficitur, velit aliquet cursus lacinia, turpis nibh dapibus massa, at dapibus odio tellus at mauris. Quisque fringilla nibh lectus, sed consectetur dui tincidunt in. Maecenas a euismod ante, ut hendrerit augue. Curabitur nec nunc porttitor, congue arcu in, auctor justo. Etiam ut vehicula magna, in pulvinar orci. Fusce efficitur venenatis lacus, feugiat pretium velit cursus inerat arcu. Suspendisse eu risus tempor, pellent.congue nunc eu lobortis.</p>
+
+                            </div>
+                            </div>
+                     </div>
                 </div>
             </section>
 
