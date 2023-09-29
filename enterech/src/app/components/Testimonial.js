@@ -59,7 +59,7 @@ const Testimonial = () => {
 
         <div className={styles.testimonial}>
           <div className={styles.testiImg}>
-            <Image src={testimonialsData[selectedTestimonial].imageSrc} />
+            <Image src={testimonialsData[selectedTestimonial].imageSrc} id={styles.testiiconimg} />
             <Image src={testimonialsData[selectedTestimonial].iconSrc} id={styles.testiicon} />
           </div>
           <div className={styles.detail}>

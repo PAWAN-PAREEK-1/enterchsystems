@@ -51,7 +51,7 @@ const Recents = () => {
             Our Recent <span>Projects</span>{" "}
           </h2>
           <Link href="" id="a">
-            <div className="btn ">
+            <div className="btn mobile-hide ">
               View All
               <Image src={rightArrow} />
             </div>

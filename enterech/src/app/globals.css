@@ -49,8 +49,8 @@ background: var(--blue, #272B39);
 
 .btn-p-more:hover{
   border-bottom: 1px solid var(--yellow, #F5C33D);
-background: var(--blue, #272B39);
-color: white;
+background: var(--blue, #272B39) !important;
+color: white !important;
 }
 .btn-p{
   padding-inline: 1.25rem 1.44rem;
@@ -97,6 +97,9 @@ margin-top: 1rem;
   }
   .btn-hero{
     margin-top: 0.94rem;
+  }
+  .mobile-hide{
+    display: none;
   }
 
 }
