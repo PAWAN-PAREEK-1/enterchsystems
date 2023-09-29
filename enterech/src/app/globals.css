@@ -78,3 +78,25 @@ padding-block: 8.62rem 9.12rem;
 margin-bottom: 7.5rem;
 flex-direction: column;
 }
+
+
+@media (max-width: 768px){
+  .index{
+    padding: 2.19rem 0.94rem;
+  }
+  .btn{
+    color: #FFF;
+font-family: Outfit;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+padding: 0.5rem 0.94rem;
+  }
+  .btn-hero{
+    margin-top: 0.94rem;
+  }
+}
+
+

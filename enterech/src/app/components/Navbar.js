@@ -52,14 +52,14 @@ const Navbar = () => {
         </div>
 
         <div className={styles.mainhead}>
-          <Image src={logo} alt="" id="logo" />
+         <Link href={"/"} ><Image src={logo} alt="" id="logo" /></Link>
 
           <div>
             <nav>
-              <div className={`menuIcon ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
-                <div className="bar1"></div>
-                <div className="bar2"></div>
-                <div className="bar3"></div>
+              <div id={styles.menuIcon} className={`menuIcon ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
+                <div className={styles.bar1}></div>
+                <div className={styles.bar2}></div>
+                <div className={styles.bar3}></div>
               </div>
 
               <ul className={styles.NavbarList}>
@@ -98,9 +98,9 @@ const Navbar = () => {
               </ul>
             </nav>
             {menuOpen && (
-              <div className="mobileNav">
-                <div className="closebtn" onClick={() => setMenuOpen(false)}>
-                  <Image src="../public/assets/Image/close.svg" alt="" />
+              <div className={styles.mobileNav}>
+                <div className={styles.closebtn} onClick={() => setMenuOpen(false)}>
+                  <Image src={""} alt="" />
                 </div>
                 <ul>
                 <li>
@@ -109,27 +109,27 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" onClick={closeMenu}>
+                  <Link href="/About" onClick={closeMenu}>
                     <span className={menuOpen ? "active" : ""}>About Us</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" onClick={closeMenu}>
-                    <span className={menuOpen ? "active" : ""}>Projects</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/" onClick={closeMenu}>
+                  <Link href="/Products" onClick={closeMenu}>
                     <span className={menuOpen ? "active" : ""}>Products</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" onClick={closeMenu}>
+                  <Link href="/Project" onClick={closeMenu}>
+                    <span className={menuOpen ? "active" : ""}>Projects</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/Blog" onClick={closeMenu}>
                     <span className={menuOpen ? "active" : ""}>Blog</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" onClick={closeMenu}>
+                  <Link href="/Contact" onClick={closeMenu}>
                     <span className={menuOpen ? "active" : ""}>Contact Us</span>
                   </Link>
                 </li>
@@ -138,8 +138,8 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link href="" id="a">
-            <div className="btn">Get Estimate Now <Image src={rightArrow}/></div>
+          <Link href="" id={styles.a}>
+            <div className={`${styles.btn} btn`}>Get Estimate Now <Image src={rightArrow}/></div>
           </Link>
         </div>
       </header>
