@@ -84,7 +84,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" onClick={closeMenu}>
+                  <Link href="/Blog" onClick={closeMenu}>
                     <span className={menuOpen ? "active" : ""}>Blog</span>
                   </Link>
                 </li>
