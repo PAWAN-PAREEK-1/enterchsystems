@@ -43,3 +43,34 @@ padding-bottom: 0.94rem;
     font-weight: 400;
     line-height: normal;
 }
+
+
+@media (max-width: 768px){
+    .up{
+        flex-direction: column;
+        gap: 1.56rem;
+    }
+    .up img{
+        width: 100%;
+        height: 100%;
+    }
+    .detail h1{
+font-size: 1.5rem;
+font-weight: 700;
+padding-bottom: 0.31rem;
+line-height: normal;
+    }
+    .box p,.detail p{
+font-size: 0.75rem;
+font-weight: 400;
+line-height: normal;
+    }
+    .box h1{
+font-size: 1.125rem;
+font-weight: 500;
+line-height: normal;
+    }
+    .down{
+        margin-top: 1.56rem;
+    }
+}
