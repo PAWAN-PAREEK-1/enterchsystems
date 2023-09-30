@@ -50,7 +50,7 @@ text-transform: capitalize;
     display: none;
     position: absolute;
     top: 50%;
-  left: 50%; 
+  left: 50%;
   transform: translate(-50%, -50%);
     width: 90%;
     height: 90%;
@@ -60,5 +60,33 @@ text-transform: capitalize;
 }
 #box2{
     width: 32%;
+}
+
+
+@media (max-width: 768px){
+    .index{
+        padding: 0.94rem;
+        background-image: none;
+        margin-bottom: 2.19rem;
+    }
+    .index h1{
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    }
+    .project{
+        flex-wrap: nowrap;
+        overflow: auto;
+        justify-content: initial;
+        width: 100%;
+        gap: 2.94rem;
+        margin-bottom: 2.19rem;
+    }
+
+    .box img{
+        width: 9rem;
+height: 9rem;
+    }
 }
 
