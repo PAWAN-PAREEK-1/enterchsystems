@@ -212,3 +212,12 @@ padding-block:0.31rem ;
         margin-bottom: 2.19rem;
     }
   }
+
+  @media (min-width: 1100px) and (max-width: 1850px){
+    .up{
+        padding: 2.5rem 3.3rem 0rem;
+    }
+    .testimonial{
+        padding: 4.19rem 3.75rem 3.75rem 8rem;
+    }
+  }

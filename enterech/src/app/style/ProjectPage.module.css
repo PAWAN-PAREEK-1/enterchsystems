@@ -90,3 +90,11 @@ height: 9rem;
     }
 }
 
+
+
+@media (min-width: 1100px) and (max-width: 1850px){
+   .index{
+    padding: 7.5rem 3.3rem;
+   }
+}
+

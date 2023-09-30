@@ -194,3 +194,10 @@ line-height: normal;
     height: 100%;
 }
 }
+
+
+@media (min-width: 1100px) and (max-width: 1850px){
+    .down{
+        gap: 2rem;
+    }
+}
