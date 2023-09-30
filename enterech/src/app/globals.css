@@ -101,6 +101,19 @@ margin-top: 1rem;
   .mobile-hide{
     display: none;
   }
+  .hero-all h1{
+    color: var(--yellow, #F5C33D);
+font-family: Outfit;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+  }
+  .hero-all{
+    margin-bottom: 2.19rem;
+    padding-block: 7rem;
+  }
 
 }
 

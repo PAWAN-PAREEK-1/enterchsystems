@@ -50,7 +50,7 @@ const page = () => {
               <Image src={a1} />
             </div>
           </div>
-          <div className={styles.box} id={styles.box2}>
+          <div className={`${styles.box} ${styles.box21}`} id={styles.box2}>
             <div className={styles.right}>
               <Image src={a2} />
             </div>

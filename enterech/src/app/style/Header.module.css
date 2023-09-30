@@ -235,13 +235,17 @@ text-decoration: none;
         padding: 0.94rem !important ;
     }
     #logo{
-        width: 50%;
+        width: 7.125rem;
+        height: 2.875rem;
+
     }
     .closebtn img{
         width: 12%;
         padding: 20px 0 0 20px;
         cursor: pointer;
     }
+
+
 
 
 }
