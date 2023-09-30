@@ -82,7 +82,16 @@ const Recents = () => {
               />
             </div>
           ))}
+
+
+
         </div>
+        <Link href="" id="a">
+            <div className="btn desktop-hide ">
+              View All
+              <Image src={rightArrow} />
+            </div>
+          </Link>
       </div>
     </section>
   );

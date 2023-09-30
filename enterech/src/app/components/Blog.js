@@ -22,8 +22,8 @@ const Blog = () => {
               molestie pharetra sits finibus nu
             </p>
           </div>
-          <Link href="" id="a">
-            <div className="btn ">
+          <Link href="" id="a" >
+            <div className="btn  mobile-hide">
               View All
               <Image src={rightArrow} />
             </div>
@@ -89,6 +89,12 @@ const Blog = () => {
             </Link>
             </div>
           </div>
+          <Link href="" id="a" >
+            <div className="btn  desktop-hide">
+              View All
+              <Image src={rightArrow} />
+            </div>
+          </Link>
         </div>
       </div>
     </section>

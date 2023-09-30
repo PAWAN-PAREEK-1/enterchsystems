@@ -160,3 +160,78 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+@media (max-width: 768px) {
+    .footer{
+         padding-inline: 0.94rem;
+    }
+    .footerBox{
+        padding: 1.56rem 0;
+        flex-direction: column;
+    }
+    .footerBox hr{
+        display: none;
+    }
+    .detail{
+        width: 100%;
+    }
+    .detail h5{
+font-size: 0.6875rem;
+font-weight: 400;
+line-height: 1.125rem; /* 163.636% */
+padding-block: 0.62rem;
+    }
+    .add img{
+        width: 1.875rem;
+height: 1.875rem;
+    }
+    .addDetail h3{
+font-size: 0.75rem;
+font-weight: 400;
+line-height: normal;
+    }
+    .addDetail h2{
+    color: #FFF;
+font-family: Lexend Deca;
+font-size: 0.6875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.contact {
+    gap: 0.75rem;
+}
+.news{
+    margin-top:1rem ;
+    width: 100%;
+}
+.news h1{
+font-size: 1.125rem;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+}
+.news p{
+font-size: 0.6875rem;
+font-weight: 400;
+line-height: 1.125rem; /* 163.636% */
+}
+.inputs{
+    width: 100%;
+}
+.social {
+    gap: 0.62rem;
+}
+.social img{
+    width: 1.25rem;
+height: 1.25rem;
+}
+.copy{
+    flex-direction: column;
+    gap: 1rem;
+}
+.link{
+    gap: 1.31rem;
+    flex-wrap: wrap;
+}
+
+}

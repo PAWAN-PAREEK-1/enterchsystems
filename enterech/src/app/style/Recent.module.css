@@ -57,6 +57,8 @@ text-transform: capitalize;
   .index{
     padding:0.94rem ;
     background: none;
+    margin-bottom: 2.19rem;
+ 
   }
   .up{
     padding-right: 0;
@@ -68,5 +70,8 @@ text-transform: capitalize;
 font-size: 1.5rem;
 font-weight: 700;
 text-transform: capitalize;
+  }
+  .bg{
+    display: none;
   }
 }

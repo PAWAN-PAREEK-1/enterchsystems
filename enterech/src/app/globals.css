@@ -104,4 +104,10 @@ margin-top: 1rem;
 
 }
 
+@media (min-width: 800px){
+.desktop-hide{
+  display: none;
+}
+}
+
 
