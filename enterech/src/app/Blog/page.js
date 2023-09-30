@@ -139,7 +139,7 @@ const Page = () => {
                       <Link href={blog.link}>
                         <div className={`${styles.rightBox} ${style.rightbox}`}>
                           <Image src={blog.image} />
-                          <div className={styles.boxDetail}>
+                          <div className={`${styles.boxDetail} ${style.boxDetail}`}>
                             <h4>{blog.date}</h4>
                             <h1>{blog.title}</h1>
                             <p>{blog.content}</p>

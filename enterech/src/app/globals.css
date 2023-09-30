@@ -114,6 +114,9 @@ text-transform: capitalize;
     margin-bottom: 2.19rem;
     padding-block: 7rem;
   }
+  .blog-btn{
+    margin-top: 3.3rem;
+  }
 
 }
 
@@ -121,6 +124,7 @@ text-transform: capitalize;
 .desktop-hide{
   display: none;
 }
+
 }
 
 

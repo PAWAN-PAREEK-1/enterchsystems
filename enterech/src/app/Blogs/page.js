@@ -161,9 +161,9 @@ const blogData = [
                     {blogData.slice(0, visibleCount).map((blog, index) => (
                       <div key={index}>
                         <Link href={blog.link}>
-                          <div className={`${styles.rightBox} ${style.rightbox}`}>
+                          <div className={`${styles.rightBox} ${style.rightbox} ${style.rightbox2}`}>
                             <Image src={blog.image} />
-                            <div className={styles.boxDetail}>
+                            <div className={`${styles.boxDetail} ${style.boxDetail2}`}>
                               <h4>{blog.date}</h4>
                               <h1>{blog.title}</h1>
                               <p>{blog.content}</p>
@@ -174,7 +174,7 @@ const blogData = [
                     ))}
                   </div>
                   <Link href="" id="a">
-            <div className="btn ">
+            <div className="btn blog-btn">
               View All
               <Image src={rightArrow} />
             </div>

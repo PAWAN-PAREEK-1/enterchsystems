@@ -84,3 +84,60 @@ line-height: normal;
 .Iright{
     margin-top: 5.19rem;
 }
+
+@media (max-width: 768px){
+    .rightbox{
+        width: 100% !important;
+    }
+    .boxDetail{
+        bottom: -5.5rem !important;
+    }
+    .rightbox{
+        margin-bottom: 5.5rem;
+    }
+    .indexMain{
+        flex-direction: column;
+        gap: 0;
+    }
+    .detailBox{
+        display: block;
+    }
+    .left , .Iright{
+        width: 100%;
+    }
+    .Iright{
+        margin-top: 0rem;
+    }
+    .left img{
+        height: 100%;
+    }
+    .Iright p{
+font-size: 0.75rem;
+font-weight: 400;
+line-height: normal;
+
+    }
+    .detailBox{
+        position: initial;
+        background: none;
+        box-shadow: none;
+        padding: 0.63rem 0;
+    }
+    .detailBox h3{
+font-size: 0.75rem;
+font-weight: 400;
+line-height: normal;
+    }
+    .detailBox h1{
+font-size: 1.5rem;
+font-weight: 600;
+line-height: normal;
+padding-block: 0.31rem 0.62rem;
+    }
+    .boxDetail2{
+        bottom: -2.2rem !important;
+    }
+    .rightbox2{
+        margin-bottom: 0.2rem;
+    }
+}
