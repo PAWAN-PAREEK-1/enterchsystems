@@ -3,15 +3,17 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "@/app/components/Navbar";
-import "../globals.css";
+import "../../globals.css";
 import styles from "@/app/style/ProductPage.module.css";
 import Recents from "@/app/components/Recents";
 import Blog from "@/app/components/Blog";
 import Footer from "@/app/components/Footer";
-import hori from "../img/hori.svg";
-import p1 from "../img/p1.svg";
+import hori from "../../img/hori.svg";
+import p1 from "../../img/p1.svg";
 
 const page = () => {
+
+
   return (
     <div>
       <Header />

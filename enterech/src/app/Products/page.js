@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import { useEffect, useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import Header from "@/app/components/Navbar";
@@ -8,12 +8,10 @@ import hori from "../img/hori.svg";
 import styles from "@/app/style/Product.module.css";
 import blub1 from "../img/blub1.svg";
 import blub2 from "../img/blub2.svg";
-import blub3 from "../img/blub3.svg";
-import blub4 from "../img/blub4.svg";
 
 const AboutBox = ({ imageSrc, title, description, link }) => (
-  <div className={styles.aboutBox}id={styles.aboutBox}>
-    <Image src={imageSrc} alt={title} />
+  <div className={styles.aboutBox} id={styles.aboutBox}>
+    <Image src={blub1} alt={title} />
     <h3>{title}</h3>
     <p>{description}</p>
     <Link href={link} id="a">
@@ -22,86 +20,34 @@ const AboutBox = ({ imageSrc, title, description, link }) => (
   </div>
 );
 
-const aboutBoxesData = [
-  {
-    imageSrc: blub1,
-    title: "Control Panel",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt.",
-    link: "/Product",
-  },
-  {
-    imageSrc: blub2,
-    title: "Secure",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt.",
-    link: "/link2",
-  },
-
-  {
-    imageSrc: blub3,
-    title: "Control Panel",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt.",
-    link: "/link1",
-  },
-  {
-    imageSrc: blub4,
-    title: "Secure",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt.",
-    link: "/link2",
-  },
-  {
-    imageSrc: blub1,
-    title: "Control Panel",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt.",
-    link: "/link1",
-  },
-  {
-    imageSrc: blub2,
-    title: "Secure",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt.",
-    link: "/link2",
-  },
-
-  {
-    imageSrc: blub3,
-    title: "Control Panel",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt.",
-    link: "/link1",
-  },
-  {
-    imageSrc: blub4,
-    title: "Secure",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt.",
-    link: "/link2",
-  },
-  {
-    imageSrc: blub1,
-    title: "Control Panel",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt.",
-    link: "/link1",
-  },
-  {
-    imageSrc: blub2,
-    title: "Secure",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt.",
-    link: "/link2",
-  },
-
-  {
-    imageSrc: blub3,
-    title: "Control Panel",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt.",
-    link: "/link1",
-  },
-  {
-    imageSrc: blub4,
-    title: "Secure",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt.",
-    link: "/link2",
-  },
-
-];
-
 const ProductsPage = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    // Fetch the products data from your JSON file
+    fetch('/products.json')
+      .then(response => response.json())
+      .then(data => {
+        // Set the products state with the fetched data
+        setProducts(data.products);
+      });
+  }, []);
+  useEffect(() => {
+    fetch('/product.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        setProducts(data.products);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
+
   return (
     <div>
       <Header />
@@ -119,8 +65,14 @@ const ProductsPage = () => {
 
           <div className={styles.pDown}>
             <div className={styles.down} id={styles.down}>
-              {aboutBoxesData.map((boxData, index) => (
-                <AboutBox key={index} {...boxData}  />
+              {products.map((product, index) => (
+                <AboutBox
+                  key={index}
+                  imageSrc={product.imageSrc}
+                  title={product.title}
+                  description={product.description}
+                  link={product.link}
+                />
               ))}
             </div>
           </div>
@@ -133,4 +85,3 @@ const ProductsPage = () => {
 };
 
 export default ProductsPage;
-
