@@ -89,8 +89,8 @@ const Blog = () => {
             </Link>
             </div>
           </div>
-          <Link href="" id="a" >
-            <div className="btn  desktop-hide">
+          <Link href="" id="a" className="desktop-hide">
+            <div className="btn  ">
               View All
               <Image src={rightArrow} />
             </div>
